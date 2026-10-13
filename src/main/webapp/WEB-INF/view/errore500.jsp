@@ -1,0 +1,20 @@
+<%@ page contentType="text/html;charset=UTF-8" isErrorPage="true" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="pageTitle" value="Errore del server — DS Games"/>
+<%@ include file="common/header.jsp" %>
+<main>
+<div class="container" style="text-align:center; padding:5rem 1rem;">
+    <div style="font-size:6rem;">⚠️</div>
+    <h1 style="font-size:4rem; font-weight:800; color:var(--color-sale);
+               margin:0.5rem 0;">500</h1>
+    <h2 style="font-size:1.4rem; margin-bottom:1rem;">
+        Errore interno del server
+    </h2>
+    <p style="color:#666; margin-bottom:2rem;">
+        Si è verificato un errore imprevisto. Riprova tra qualche minuto.
+    </p>
+    <a href="${pageContext.request.contextPath}/home"
+       class="btn btn-primary">Torna alla Home</a>
+</div>
+</main>
+<%@ include file="common/footer.jsp" %>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copiare su conf/Catalina/localhost/DSGames.xml di Tomcat 9 e valorizzare localmente. -->
+<Context>
+    <Resource name="jdbc/dsgames" auth="Container" type="javax.sql.DataSource"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/dsgames?serverTimezone=Europe/Rome&amp;useSSL=false"
+              username="INSERIRE_UTENTE_DB" password="INSERIRE_PASSWORD_DB"
+              maxTotal="20" maxIdle="10" maxWaitMillis="10000"/>
+</Context>
